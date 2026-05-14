@@ -1,13 +1,11 @@
-Lead l1 = new Lead(
-    LastName = 'A',
-    Company = 'Amazon',
-    Email = 'test@gmail.com'
+Opportunity opp = new Opportunity(
+    Name = 'Amazon Deal',
+    StageName = 'Prospecting',
+    CloseDate = Date.today()
 );
 
-Lead l2 = new Lead(
-    LastName = 'B',
-    Company = 'Google',
-    Email = 'test@gmail.com'
-);
+insert opp;
 
-insert new List<Lead>{l1, l2};
+opp.StageName = 'Closed Won';
+
+update opp;
