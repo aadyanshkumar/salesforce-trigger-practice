@@ -1,5 +1,6 @@
 @isTest
 public with sharing class TestClass {
+   
     @isTest
     static void testOpportunity(){
         //make data
@@ -20,6 +21,6 @@ public with sharing class TestClass {
         Test.startTest();
         update oppList;
         Test.stopTest();
-        
+
     }
 }
